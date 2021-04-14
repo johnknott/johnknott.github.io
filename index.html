@@ -20,7 +20,7 @@
 
             previewFilePromise.then(adobeViewer => {
               adobeViewer.getAPIs().then(apis => {
-                apis.getZoomAPIs().zoomIn();
+                apis.getZoomAPIs().setZoomLevel(0.0);
                });
             });
 
