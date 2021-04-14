@@ -16,11 +16,11 @@
             var previewFilePromise = adobeDCView.previewFile({
                 content:{location: {url: "https://www.johnknott.co.uk/CV.pdf"}},
                 metaData:{fileName: "John Knott - CV.pdf"}
-            }, {defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showLeftHandPanel: false});
+            }, {dockPageControls: false, defaultViewMode: "FIT_WIDTH", showAnnotationTools: false, showLeftHandPanel: false});
 
             previewFilePromise.then(adobeViewer => {
               adobeViewer.getAPIs().then(apis => {
-                apis.getZoomAPIs().setZoomLevel(0.1);
+                apis.getZoomAPIs().zoomOut();
                });
             });
 
