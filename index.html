@@ -1,37 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Knott - CV</title>
-</head>
-<body>
-
-    <div id="adobe-dc-view"></div>
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script type="text/javascript">
-        var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-        if(is_safari){
-            window.location.replace("https://johnknott.co.uk/");
-        }
-        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-            var adobeDCView = new AdobeDC.View({clientId: "ab08ded671ad4a0a96c333f22fe8770e", divId: "adobe-dc-view"});
-            var previewFilePromise = adobeDCView.previewFile({
-                content:{location: {url: "https://www.johnknott.co.uk/CV.pdf"}},
-                metaData:{fileName: "John Knott - CV.pdf"}
-            }, {dockPageControls: false, defaultViewMode: "FIT_WIDTH", showAnnotationTools: false, showLeftHandPanel: false});
-
-            previewFilePromise.then(adobeViewer => {
-              adobeViewer.getAPIs().then(apis => {
-                apis.getZoomAPIs().zoomOut();
-               });
-            });
-
-        });
-    </script>
-
-</body>
-</html>
-
+<meta charset="utf-8">
+<title>Redirecting...</title>
+<link rel="canonical" href="http://johnknott.co.uk/CV.pdf">
+<meta http-equiv="refresh" content="0; url=http://johnknott.co.uk/CV.pdf">
+<h1>Redirecting...</h1>
+<a href="http://johnknott.co.uk/CV.pdf">Click here if you are not redirected.</a>
+<script>location="http://johnknott.co.uk/CV.pdf"</script>
 
